@@ -1,0 +1,70 @@
+{
+	"general": {
+		"name": "text_translation",
+		"description": "text to text translation (auto-detects input lang, user specified output lang)",
+		"developer": "Nicolas Dutly",
+		"affiliation": "University Of Fribourg",
+		"email": "ndutly@student.ethz.ch",
+		"author": "Nicolas Dutly",
+		"DOI": "",
+		"type": "text-processing",
+		"license": "MIT",
+		"ownsCopyright": "0"
+	},
+	"input": [
+		{
+			"file": {
+				"name": "inputFile",
+				"description": "The input text file to translate",
+				"options": {
+					"required": true,
+					"mimeTypes": {
+						"allowed": [
+							"text/plain"
+						],
+						"default": "text/plain"
+					}
+				}
+			}
+		},
+		{
+			"string": {
+				"name": "outputlang",
+				"description": "output language",
+				"options": {
+					"required": true,
+					"default": "fr"
+				}
+			}
+		},
+		{
+			"outputFolder": {}
+		}
+	],
+	"output": [
+		{
+			"file": {
+				"name": "translation",
+				"type": "text",
+				"description": "resulting translation",
+				"options": {
+					"filename":"output.txt",
+					"mimeTypes": {
+						"allowed": [
+							"text/plain"
+						],
+						"default": "text/plain"
+					},
+					"visualization": false
+				}
+			}
+		}
+	],
+	"method": {
+		"imageType": "docker",
+		"imageName": "jumpst3r/texttranslate",
+		"testData": "https://www.dropbox.com/s/6ruwywzjb490d52/tmp654323456.zip?dl=1",
+		"executableType": "bash",
+		"executable_path": "/input/script.sh"
+	}
+}
