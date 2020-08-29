@@ -28,7 +28,7 @@
 			}
 		},
 		{
-			"string": {
+			"text": {
 				"name": "outputlang",
 				"description": "output language",
 				"options": {
