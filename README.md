@@ -26,3 +26,5 @@ The docker image is also compatible with [DIVAServices](https://github.com/lunac
 ### Sources / Comments
 
 Uses public (unofficial) google-translate API and as such might be limited in terms of numbers of numbers of words to be translated. For details on this issue, refer to [this link](https://github.com/ssut/py-googletrans)
+
+For a similar project that supports translating formatted documents (odt, doc, docx), check out this [link](https://github.com/Jumpst3r/doctranslate)
